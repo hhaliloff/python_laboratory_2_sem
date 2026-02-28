@@ -255,6 +255,3 @@ def load_dataset(path="data/students_scores.csv"):
     if not os.path.exists(path):
         raise FileNotFoundError(f"Файл по пути {path} не найден")
     return pd.read_csv(path).to_numpy()
-
-
-
