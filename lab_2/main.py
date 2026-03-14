@@ -255,7 +255,7 @@ def plot_histogram(data):
     """
     Строит гистограмму распределения оценок по математике.
     """
-    os.makedirs("plots", exist_ok=True)
+    os.makedirs("lab_2/plots", exist_ok=True)
 
     plt.figure()
     plt.hist(data, bins=10)
@@ -264,7 +264,7 @@ def plot_histogram(data):
     plt.xlabel("Оценка")
     plt.ylabel("Количество студентов")
 
-    plt.savefig("plots/math_histogram.png")
+    plt.savefig("lab_2/plots/math_histogram.png")
     plt.close()
 
 
@@ -272,14 +272,14 @@ def plot_heatmap(matrix):
     """
     Строит тепловую карту корреляции предметов.
     """
-    os.makedirs("plots", exist_ok=True)
+    os.makedirs("lab_2/plots", exist_ok=True)
 
     plt.figure()
     sns.heatmap(matrix, annot=True, cmap="coolwarm")
 
     plt.title("Корреляция предметов")
 
-    plt.savefig("plots/correlation_heatmap.png")
+    plt.savefig("lab_2/plots/correlation_heatmap.png")
     plt.close()
 
 
@@ -287,7 +287,7 @@ def plot_line(x, y):
     """
     Сроит график зависимости: студент -> оценка по математике.
     """
-    os.makedirs("plots", exist_ok=True)
+    os.makedirs("lab_2/plots", exist_ok=True)
 
     plt.figure()
     plt.plot(x, y, marker="o")
@@ -296,5 +296,5 @@ def plot_line(x, y):
     plt.xlabel("Номер студента")
     plt.ylabel("Оценка")
 
-    plt.savefig("plots/math_line_plot.png")
+    plt.savefig("lab_2/plots/math_line_plot.png")
     plt.close()
