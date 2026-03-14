@@ -298,3 +298,5 @@ def plot_line(x, y):
 
     plt.savefig("lab_2/plots/math_line_plot.png")
     plt.close()
+
+
